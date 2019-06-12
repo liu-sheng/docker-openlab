@@ -19,7 +19,7 @@ ENV SUPYBOT_HOME=/home/supybot \
 
 RUN useradd -u 1001 -g 0 -d ${SUPYBOT_HOME}/ -m -r -s /usr/sbin/nologin supybot
 RUN mkdir -p ${SUPYBOT_HOME}/backup ${SUPYBOT_HOME}/data/tmp ${SUPYBOT_HOME}/logs/plugins ${SUPYBOT_HOME}/plugins ${SUPYBOT_HOME}/tmp
-RUN apt-get update && apt-get install git-core python-pip gettxt -y
+RUN apt-get update && apt-get install git-core python-pip gettext -y
 RUN pip install git+https://github.com/ProgVal/Limnoria
 RUN apt-get autoremove -y && apt-get clean -y && rm -fr /var/lib/apt/lists/*
 RUN cd $HOME
