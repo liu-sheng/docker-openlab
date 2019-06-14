@@ -883,7 +883,7 @@ supybot.plugins.GitHub: True
 #
 # Default value:
 ###
-supybot.plugins.GitHub.announces: theopenlab/openlab-zuul-jobs | freenode | #askopenlab || theopenlab/openlab | freenode | #askopenlab
+supybot.plugins.GitHub.announces: theopenlab/openlab-zuul-jobs | freenode | #askopenlab || theopenlab/openlab | freenode | #askopenlab || theopenlab/labkeeper | freenode | #askopenlab
 
 ###
 # Set of space-separated secret payloads used to authenticate GitHub.
@@ -1928,7 +1928,7 @@ supybot.servers.http.keepAlive: False
 #
 # Default value: 8080
 ###
-supybot.servers.http.port: 8080
+supybot.servers.http.port: 20196
 
 ###
 # If true, uses IPV6_V6ONLY to disable forwaring of IPv4 traffic to IPv6
