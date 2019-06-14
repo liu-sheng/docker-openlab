@@ -12,3 +12,7 @@ docker run -d --name openlab-ircbot \
     -e SUPYBOT_PASSWORD=youpassword \
     liusheng2048/supybot:latest
 ```
+For the `GitHub` plugin, Also need to add webhook for push events to supybot:
+```bash
+https://github.com/organizations/theopenlab/settings/hooks
+```
